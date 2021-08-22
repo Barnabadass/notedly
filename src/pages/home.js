@@ -9,6 +9,7 @@ const Home = () => {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
+  console.log("error: ", error);
   return (
     <React.Fragment>
       <NoteFeed notes={data.noteFeed.notes} />
